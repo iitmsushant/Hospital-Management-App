@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Patient Dashboard</h3>
+
+<h4>Book Appointment</h4>
+<form method="POST" action="{{ url_for('book', doctor_id=1) }}">
+    <label>Date</label>
+    <input type="date" name="date" class="form-control">
+    <label>Time</label>
+    <input type="time" name="time" class="form-control"><br>
+
+    <button class="btn btn-primary">Book</button>
+</form>
+
+<hr>
+
+<h4>Your Appointments</h4>
+<ul>
+{% for a in appointments %}
+    <li>{{ a.id }} — {{ a.datetime }} — {{ a.status }}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

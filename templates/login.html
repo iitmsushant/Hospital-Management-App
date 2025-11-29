@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            text-align: center;
+            color: rgb(255, 5, 5);
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;       
+        }
+
+        .form-cont{
+            width: 320px;
+
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
+            background: #ece8e8;
+            margin-top: 50px;
+            
+
+        }
+
+        .form-cont h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-cont label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-cont input, .form-cont select{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+       }
+
+        .form-cont button{
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+
+        }
+
+        .form-cont button:hover{
+            background-color: #218838;
+
+        }
+
+        #Text{
+            text-align: center;
+            margin-bottom: 40px;
+            color: rgb(170, 23, 23);
+            background-color: #e7c7c7;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+        .small-text {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+
+        }
+
+        .small-text a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .small-text a:hover {
+            text-decoration: underline;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="form-cont">
+        <div id="Text"><h1>Register Here</h1></div>
+        <form action="">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+
+            <label for="Gender">Gender</label>
+            <select name="" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <button type="submit">Submit</button>
+
+            <p class="small-text">Don't have an account? <a href="/register">Create Account</a></p>
+            
+
+    
+        </form>
+    </div>
+</body>
+</html>

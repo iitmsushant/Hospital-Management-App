@@ -1,0 +1,108 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eef1f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== Form Container ===== */
+.form-container {
+    background: #ffffff;
+    width: 350px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+/* ===== Labels & Inputs ===== */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 5px rgba(26, 115, 232, 0.4);
+}
+
+/* ===== Button ===== */
+.btn {
+    width: 100%;
+    background: #1a73e8;
+    padding: 10px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0f5dc8;
+}
+
+/* ===== Links ===== */
+p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Flash Messages ===== */
+.success {
+    color: green;
+    padding: 8px;
+    background: #e6ffe6;
+    border-left: 4px solid green;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    padding: 8px;
+    background: #ffe6e6;
+    border-left: 4px solid red;
+    margin-bottom: 10px;
+}
